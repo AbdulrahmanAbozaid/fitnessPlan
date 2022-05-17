@@ -179,6 +179,8 @@ h3 {
 }
 
 .landing .container .side-2 {
+    background-image: -wekit-linear-gradient(135deg, rgb(10 10 200 / 28%) 50%, rgb(10 10 200 / 17%) 50%);
+    background-image: -moz-linear-gradient(135deg, rgb(10 10 200 / 28%) 50%, rgb(10 10 200 / 17%) 50%);
     background-image: linear-gradient(135deg, rgb(10 10 200 / 28%) 50%, rgb(10 10 200 / 17%) 50%);
     position: relative;
     width: 48%;
@@ -311,6 +313,8 @@ h3 {
 
 .goals .container .down .figure:first-child,
 .goals .container .down .figure:nth-child(2) {
+    -webkit-box-shadow: 21px 0px 8px 0px #0003;
+    -moz-box-shadow: 21px 0px 8px 0px #0003;
     box-shadow: 21px 0px 8px 0px #0003;
 }
 
@@ -327,6 +331,8 @@ h3 {
 }
 
 .goals .container .down .figure:hover {
+    -webkit-box-shadow: 1px 1px 8px 1px #0004;
+    -moz-box-shadow: 1px 1px 8px 1px #0004;
     box-shadow: 1px 1px 8px 1px #0004;
     transition: box-shadow .3s;
     transform: translateY(-10px);
