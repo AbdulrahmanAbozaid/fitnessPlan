@@ -49,6 +49,7 @@ h2,
 h1,
 h3 {
     text-transform: capitalize;
+    color: rgb(0 0 0/.7);
 }
 
 
@@ -292,30 +293,41 @@ h3 {
 .goals .container .down {
     display: flex;
     margin-block: 42px;
-    justify-content: space-evenly;
-    width: 63em;
+    justify-content: space-between;
 }
 
 .goals .container .down .figure {
-    width: 30%;
+    width: 32%;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 15px;
+    border-radius: 8px;
     text-align: center;
     transition: transform .3s;
     transform: translateY(0);
+    transition: box-shadow .3s, transform .5s;
 }
 
-.goals .container .down .figure:last-child {
-    box-shadow: 1px 1px 8px 1px #0004;
-    border-radius: 8px;
-    transition: box-shadow .3s, transform .5s;
+.goals .container .down .figure:first-child,
+.goals .container .down .figure:nth-child(2) {
+    box-shadow: 21px 0px 8px 0px #0003;
+}
+
+.goals .container .down .figure:first-child~.figure {
+    transform: translateX(-2%);
+}
+
+.goals .container .down .figure:hover~.figure {
+    transform: translateX(0);
+}
+
+.goals .container .down .figure:last-child:hover {
+    transform: translateX(0) translateY(-10px);
 }
 
 .goals .container .down .figure:hover {
     box-shadow: 1px 1px 8px 1px #0004;
-    border-radius: 8px;
     transition: box-shadow .3s;
     transform: translateY(-10px);
 }
